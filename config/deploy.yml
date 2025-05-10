@@ -2,7 +2,7 @@
 service: myCars
 
 # Name of the container image.
-image: ppollanen/myCars
+image: ppollanen/mycars
 
 # Deploy to these servers.
 servers:
