@@ -1,0 +1,12 @@
+<h1>Add car</h1>
+
+<%= form_with model: @car do |form| %>
+  <div>
+    <%= form.label :licplt %>
+    <%= form.text_field :licplt %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyCars</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="icon" href="/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/icon.png" sizes="512x512">
+
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      align-items: center;
+      background-color: #FFFFFF;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #261B23;
+      display: flex;
+      flex-direction: column;
+      font-family: Sans-Serif;
+      font-size: calc(0.9em + 0.5vw);
+      font-style: normal;
+      font-weight: 400;
+      justify-content: center;
+      line-height: 1.25;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    nav {
+      font-size: 0;
+      height: 20vw;
+      line-height: 0;
+      max-height: 280px;
+      max-width: 280px;
+      min-height: 86px;
+      min-width: 86px;
+      width: 20vw;
+    }
+
+    nav a {
+      background: #D30001;
+      border-radius: 100%;
+      display: flex;
+      transition: background 0.25s cubic-bezier(0.33, 1, 0.68, 1);
+      
+    }
+
+    nav a:hover {
+      background: #261B23;
+    }
+
+    nav a img {
+      height: auto;
+      max-width: 100%;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    ul {
+      bottom: 0;
+      left: 0;
+      list-style: none;
+      margin: 0 2rem 2rem 2rem;
+      position: absolute;
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="https://rubyonrails.org">
+      <%= image_tag 'car-icon.jpg', alt: 'MyCars Logo', class: 'logo' %>
+    </a>
+  </nav>
+
+  <ul>
+    <li><strong></strong> <a href="cars/">My Cars</a></li>
+    <li><strong>Rack version:</strong> <%= Rack.release %></li>
+    <li><strong>Ruby version:</strong> <%= RUBY_DESCRIPTION %></li>
+  </ul>
+</body>
+
+</html>
+

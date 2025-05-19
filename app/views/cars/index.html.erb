@@ -1,0 +1,11 @@
+<h1>Cars</h1>
+
+<%= link_to "Add car", new_car_path %>
+
+<div id="cars">
+  <% @cars.each do |car| %>
+    <div>
+      <%= link_to car.licplt, car %>
+    </div>
+  <% end %>
+</div>
