@@ -1,4 +1,16 @@
 <h1><%= @car.licplt %></h1>
+<p>
+    <strong>Purchase date:</strong>
+    <%= @car.purchase_date %>
+</p>
+<p>
+    <strong>Purchase km:</strong>
+    <%= @car.purchase_km %>
+</p>
+<p>
+    <strong>Purchase price:</strong>
+    <%= number_to_currency(@car.purchase_price, :unit => "€") %>
+</p>
 
 <%= link_to "Back", cars_path %>
 <%= link_to "Edit", edit_car_path(@car) %>

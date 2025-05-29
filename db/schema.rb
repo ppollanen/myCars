@@ -10,11 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_05_18_093530) do
+ActiveRecord::Schema[8.0].define(version: 2025_05_29_070203) do
   create_table "cars", force: :cascade do |t|
     t.string "licplt"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "purchase_date"
+    t.integer "purchase_km"
+    t.decimal "purchase_price"
   end
 
   create_table "sessions", force: :cascade do |t|

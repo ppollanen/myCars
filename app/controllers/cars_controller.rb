@@ -35,6 +35,6 @@ class CarsController < ApplicationController
 
   private
     def car_params
-      params.expect(car: [ :licplt ])
+      params.expect(car: [ :licplt, :purchase_date, :purchase_km, :purchase_price ])
     end
 end
