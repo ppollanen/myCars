@@ -1,3 +1,3 @@
 class Car < ApplicationRecord
-  validates :licplt, presence: true
+  validates :registration_number, presence: true
 end
